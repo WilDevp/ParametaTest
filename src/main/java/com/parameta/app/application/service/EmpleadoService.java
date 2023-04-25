@@ -1,4 +1,8 @@
 package com.parameta.app.application.service;
 
-public class EmpleadoService {
+import com.parameta.app.application.dto.EmpleadoDTO;
+import reactor.core.publisher.Mono;
+
+public interface EmpleadoService {
+    Mono<EmpleadoDTO>registrarEmpleado(EmpleadoDTO empleadoDTO);
 }
